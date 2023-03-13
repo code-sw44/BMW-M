@@ -1,0 +1,168 @@
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .contact__form {
+    margin-top: 50px;
+  }
+
+  .contact__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .contact__list-item {
+    margin: auto;
+  }
+  .header__logo {
+    padding-left: 25px;
+  }
+  .burger-btn span {
+    position: absolute;
+    top: 50%;
+    right: 31px;
+  }
+
+  .header::before {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .slider__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .gallery__title {
+    display: flex;
+    justify-content: center;
+  }
+  .burger-btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .header__logo {
+    z-index: 5;
+  }
+
+  .burger-btn span,
+  .burger-btn span::before,
+  .burger-btn span::after {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 5px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .burger-btn span::after {
+    bottom: -15px;
+  }
+
+  .burger-btn span::before {
+    top: -15px;
+  }
+
+  .header::before {
+    content: "";
+    background-color: #252525;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header__menu {
+    position: absolute;
+    left: 0;
+    background-color: #252525;
+    top: 0px;
+    width: 100%;
+    padding: 15px 0;
+    justify-content: center;
+    z-index: 1;
+    transition: 0.7s;
+  }
+
+  .header__menu-show {
+    z-index: 6;
+    top: 100px;
+    border-top: 1px solid yellow;
+  }
+
+  span {
+    display: block;
+
+  }
+
+  span:active {
+    display: block;
+    transform: rotate(360deg);
+    transition: 0.2s;
+  }
+
+  span:active {
+    display: block;
+    transform: rotate(-360deg);
+    transition: 0.2s;
+  }
+
+  span:hover::before {
+    background-color: yellow;
+    transform: rotate(-600deg);
+    transition: 0.4s;
+    position: absolute;
+    top: 0;
+  }
+
+  span:hover::after {
+    background-color: yellow;
+    transform: rotate(600deg);
+    transition: 0.4s;
+    position: absolute;
+    top: 0;
+  }
+
+  header a:hover {
+    color: yellow;
+
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .header__menu {
+    column-gap: 20px;
+  }
+
+}
